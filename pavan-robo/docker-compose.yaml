@@ -29,7 +29,7 @@ volumes:
       type: none
       device: /home/ec2-user/mongodb
 
-services:
+services:# where this service act as an single entry point of all the requests coming from the clients
   web:
     image: web:v1
     container_name: web
